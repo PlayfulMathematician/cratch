@@ -5,8 +5,8 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
 add_executable(cratch
-        src/main.c
-        src/zip.c
+        source/main.c
+        source/zip.c
         include/zip.h
 )
 
