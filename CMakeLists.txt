@@ -14,7 +14,7 @@ add_executable(cratch
 target_include_directories(cratch PRIVATE include)
 
 # Build miniz as a static lib and link it
-add_library(miniz STATIC miniz/miniz.c)
+add_library(miniz STATIC include/miniz/miniz.c)
 target_include_directories(miniz PUBLIC include/miniz)  # if miniz.h is at include/miniz.h
 
 target_link_libraries(cratch PRIVATE miniz)
