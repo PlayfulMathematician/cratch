@@ -1,5 +1,5 @@
 /*
-main.c - The main entry point file for this entire project
+zip.h - A header file for zip.c
     Copyright (C) 2025 bringupyourpost
 
     This program is free software: you can redistribute it and/or modify
@@ -12,12 +12,8 @@ main.c - The main entry point file for this entire project
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 */
-#include "zip.h"
-#include <stdio.h>
 
-int main(int argc, char *argv[]) {
-    if (argc != 2) return 1;
-
-    unzip_sb3_to_cratch(argv[1]);
-    return 0;
-}
+#ifndef ZIP_H
+#define ZIP_H
+void unzip_sb3_to_cratch(const char *zip_path);
+#endif
