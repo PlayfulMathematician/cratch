@@ -7,7 +7,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 add_executable(cratch
         src/main.c
         src/zip.c
-        src/zip.h
+        include/zip.h
 )
 
 # make sure the compiler can find include/miniz/miniz.h
